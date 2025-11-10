@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Ant Design overrides */
+.ant-card {
+  margin-bottom: 20px;
+}
+
+.ant-space {
+  width: 100%;
+}

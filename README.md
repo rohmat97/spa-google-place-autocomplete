@@ -1,16 +1,60 @@
-# React + Vite
+# React + Redux + Ant Design Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates a scalable React application with Redux state management and Ant Design UI components.
 
-Currently, two official plugins are available:
+## Features Implemented
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Redux State Management**: Using Redux Toolkit for efficient state management
+- **Middleware**: Redux Thunk for handling asynchronous operations
+- **UI Framework**: Ant Design components for a modern, responsive interface
+- **Scalable Architecture**: Well-organized project structure for maintainability
+- **Routing**: React Router for navigation between pages
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── components/          # Reusable UI components
+├── pages/               # Page components
+├── store/               # Redux store and slices
+│   └── slices/          # Individual Redux slices
+├── AppRouter.jsx        # Main router component
+├── App.jsx              # Main app component
+└── main.jsx             # Entry point
+```
 
-## Expanding the ESLint configuration
+## Dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React & React DOM
+- Redux & React-Redux
+- Redux Toolkit
+- Redux Thunk
+- Ant Design
+- React Router DOM
+
+## Getting Started
+
+1. Install dependencies: `pnpm install`
+2. Start the development server: `pnpm dev`
+
+## Redux Implementation
+
+The Redux store is configured with:
+- Redux Toolkit for simplified Redux setup
+- Redux Thunk middleware for async operations
+- Example slices for both synchronous and asynchronous state management
+
+## Ant Design Integration
+
+Ant Design components are used throughout the application for:
+- Layout components (Layout, Header, Content, Footer)
+- UI elements (Buttons, Cards, Menus)
+- Data display (Lists, Spinners, Alerts)
+- Form elements and navigation
+
+## Scalability Features
+
+- Modular component structure
+- Separation of concerns (components, pages, store)
+- Reusable components
+- Clear routing implementation
