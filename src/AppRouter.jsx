@@ -13,7 +13,7 @@ const AppRouter = () => {
 
   return (
     <Router>
-      <Layout>
+      <Layout style={{ minHeight: '100vh' }}>
         <Header style={{ display: 'flex', alignItems: 'center' }}>
           <div className="demo-logo" />
           <Menu
@@ -30,11 +30,11 @@ const AppRouter = () => {
             style={{ flex: 1, minWidth: 0 }}
           />
         </Header>
-        <Content style={{ padding: '0 48px' }}>
+        <Content style={{ padding: '24px 48px' }}>
           <div
             style={{
               background: colorBgContainer,
-              minHeight: 280,
+              minHeight: 'calc(100vh - 134px)',
               padding: 24,
               borderRadius: borderRadiusLG,
             }}
