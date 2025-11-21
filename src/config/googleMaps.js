@@ -2,7 +2,7 @@
 
 // In production, load this from an environment variable instead of hardcoding
 // const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
-const GOOGLE_MAPS_API_KEY = "AIzaSyAcSqvUzuAcsjWgyRaw5iioESBwKdV_Xls";
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
 export const GOOGLE_MAPS_CONFIG = {
   apiKey: GOOGLE_MAPS_API_KEY,
